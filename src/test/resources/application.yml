@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: demo-lombok-test
+  profiles:
+    active: base,test
+
+---
+spring:
+  profiles: test
+  datasource:
+    url: jdbc:mariadb://maven.rd.mt:3308/test
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+
